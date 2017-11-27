@@ -26,7 +26,7 @@ Your description start form next line and do not delete lines upto this point.
 
   - readme : 윤찬솔
   - main : 전희수
-  - header : 
+  - header : 허보성
   - library : 김찬현, 박준형 
   
   - - -
