@@ -32,8 +32,8 @@ Your description start form next line and do not delete lines upto this point.
   - - -
   
   <Function descriptions>
-   - create : 새로운 노드 생성
-   - append : 노드를 리스트에 추가하는 함수
+   - create : 새로운 node 생성
+   - append : node를 리스트에 추가하는 함수
    - reverse : linked list를 역순으로 출력하는 함수
    - center : linked list의 중간위치에 있는 자료의 값을 출력하는 함수
    - print_fun : linked list를 출력하는 함수
@@ -46,6 +46,7 @@ Your description start form next line and do not delete lines upto this point.
    - 사용된 헤더파일 : <stdio.h>, <stdlib.h>, <string.h>
    - 데이터 형식 : struct node
      · 구조체 안의 데이터 : int value, struct node *next
+     · 구조체인 struct node를 node로 재정의
      · 구조체의 포인터인 struct node*를 pnode로 재정의
    - main에 사용할 함수 선언
      · create, append, reverse, center, print_fun, delete_odd
@@ -53,3 +54,5 @@ Your description start form next line and do not delete lines upto this point.
   - - -
   
   <team's idea>
+   - 
+  
