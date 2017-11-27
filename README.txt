@@ -16,7 +16,7 @@ Your description start form next line and do not delete lines upto this point.
   2. 입력되는 정수값은 linked list를 구성 하면서 node에 저장 
   3. 출력하려는 값
   	- 입력된 자료의 개수를 출력
-   	- 입력자료를 입력 역순으로 출력 
+   - 입력자료를 입력 역순으로 출력 
   	- 입력자료의 중간위치에 있는 자료의 값 출력(중간값이 아님) 	
   	- 입력자료를 입력 순으로 출력 
   	- 입력자료에서 홀수번째 자료를 모두 삭제 
@@ -32,8 +32,13 @@ Your description start form next line and do not delete lines upto this point.
   - - -
   
   <Function descriptions>
-   - create : 새로운 메모리 할당
-  
+   - create : 새로운 노드 생성
+   - append : 노드를 리스트에 추가하는 함수
+   - reverse : linked list를 역순으로 출력하는 함수
+   - center : linked list의 중간위치에 있는 자료의 값을 출력하는 함수
+   - print_fun : linked list를 출력하는 함수
+   - delete_odd : 홀수번째 자료를 삭제하는 함수
+ 
   - - -
   
   <Declaration of important data and data types in user header file>
