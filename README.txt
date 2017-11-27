@@ -32,11 +32,19 @@ Your description start form next line and do not delete lines upto this point.
   - - -
   
   <Function descriptions>
+   - create : 새로운 메모리 할당
   
   - - -
   
   <Declaration of important data and data types in user header file>
-  
+   - 이름 : header.h
+   - 사용된 헤더파일 : <stdio.h>, <stdlib.h>, <string.h>
+   - 데이터 형식 : struct node
+     · 구조체 안의 데이터 : int value, struct node *next
+     · 구조체의 포인터인 struct node*를 pnode로 재정의
+   - main에 사용할 함수 선언
+     · create, append, reverse, center, print_fun, delete_odd
+     
   - - -
   
   <team's idea>
