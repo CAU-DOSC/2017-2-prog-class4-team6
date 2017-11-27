@@ -27,7 +27,7 @@ Your description start form next line and do not delete lines upto this point.
   - readme : 윤찬솔
   - main : 전희수
   - header : 허보성
-  - library : 김찬현, 박준형 
+  - library : 김찬현(linkedlistfunc), 박준형(printfun) 
   
   - - -
   
