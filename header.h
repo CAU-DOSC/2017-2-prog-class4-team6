@@ -10,6 +10,7 @@ struct node
 	struct node *next;
 };
 
+typedef struct node node;
 typedef struct node *pnode;
 
 pnode create(int n);
