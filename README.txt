@@ -54,5 +54,6 @@ Your description start form next line and do not delete lines upto this point.
   - - -
   
   <team's idea>
-   - 
+   - git 사용이 어색했으나 배운대로 잘 된듯함
+   - 과제를 하면서 linked list에 대해서 잘 이해할 수 있었다.
   
