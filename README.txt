@@ -32,12 +32,12 @@ Your description start form next line and do not delete lines upto this point.
   - - -
   
   <Function descriptions>
-   - create : 새로운 node 생성
-   - append : node를 리스트에 추가하는 함수
-   - reverse : linked list를 역순으로 출력하는 함수
-   - center : linked list의 중간위치에 있는 자료의 값을 출력하는 함수
-   - print_fun : linked list를 출력하는 함수
-   - delete_odd : 홀수번째 자료를 삭제하는 함수
+   - create : value 값을 입력받아 새로운 node를 생성하는 함수
+   - append : create로 생성된 node의 주소를 입력받아 리스트의 마지막에 추가하는 함수
+   - reverse : linked list의 head의 주소와 list의 갯수를 입력받아 linked list를 역순으로 출력하는 함수
+   - center : linked list의 head의 주소와 list의 갯수를 입력받아 linked list의 중간위치에 있는 자료의 값을 출력하는 함수
+   - print_fun : linked list의 head의 주소를 입력받아 linked list를 출력하는 함수
+   - delete_odd : linked list의 head의 주소와 list의 갯수를 입력받아 linked list의 홀수번째 자료를 삭제하는 함수
  
   - - -
   
@@ -55,4 +55,4 @@ Your description start form next line and do not delete lines upto this point.
   
   <team's idea>
    - 
-  
+  
