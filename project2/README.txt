@@ -1,4 +1,4 @@
-<프로젝트 개요>
+﻿<프로젝트 개요>
  
  문자열의 길이와 rotate시키는 크기를 입력받아 4가지 방법(Trivial solution / juggling / block-swap / reverse)으로 문자열을 rotate시켜 각 방법으로 출력된 문자열과 각 방법의 계산시간을 출력하는 프로그램
  
@@ -33,3 +33,7 @@
  - gcd : 입렵받은 두 정수의 최대공약수를 출력하는 함수
  
  - Juggling : 입력받은 문자열과 rotate시킬 크기인d, 문자열의 길이인 n을 입력받아 Juggling Algorithm을 이용하여 rotate시키는 함수
+ 
+ - reverse : arr[start]부터 arr[end]까지 reverse 하는 함수
+ 
+ - _reverse : 입력받은 문자열과 rotate시킬 크기인d, 문자열의 길이인 n을 입력받아 reverse함수를 이용하여 rotate시키는 함수
