@@ -1,17 +1,17 @@
 #include "header.h"
 
 // arr[start] 부터 arr[end]까지 reverse하는 함수
-void reverse(int arr[], int start, int end)
+void reverse(char arr[], int start, int end)
 {
 	for (int i = 0; i < ((end - start + 1) / 2); i++)
 	{
-		int temp = arr[start + i];
+		char temp = arr[start + i];
 		arr[start + i] = arr[end - i];
 		arr[end - i] = temp;
 	}
 }
 
-void _reverse(int arr[], int d, int n)
+void _reverse(char arr[], int d, int n)
 {
 	if (d > 0)
 	{
