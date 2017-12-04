@@ -1,15 +1,20 @@
 ﻿<프로젝트 개요>
  
- 문자열의 길이와 rotate시키는 크기를 입력받아 4가지 방법(Trivial solution / juggling / block-swap / reverse)으로 문자열을 rotate시켜 각 방법으로 출력된 문자열과 각 방법의 계산시간을 출력하는 프로그램
- 
- ㅁ절차
-  1. 문자열의 길이와 rotate시킬 크기를 입력한다.
-   - rotate시킬 크기인d가 양수이면 왼쪽으로 rotate, 음수이면 오른쪽으로 rotate시킨다.
-  2. 문자열을 4가지 방법을 이용해 rotate한다. 
-  3. 출력하려는 값
-   - 각 방법을 써서 나타난 결과 데이터
-   - 각 방법을 써서 걸리는 데이터의 계산시간
-   
+ • Input data 
+   – n  d   CharArrayOfLengthN 
+     • d > 0 : clockwise rotation  
+     • d < 0 : counterclockwise rotation
+
+ • Program 
+   – 4 functions of rotation returns with result 
+     • Trivial solution / juggling / block-swap / reverse 
+   – Main routine handling I/O and invoke functions 
+     • Main(): generate test case(input data) to compare time complexity of 4 methods
+
+ • Output data 
+   – Time elapsed for rotating data for 4 methods respectively 
+     • Series of  4 results to show the difference
+
    - - -
   
 <역할분담>
@@ -32,8 +37,14 @@
   
  - gcd : 입렵받은 두 정수의 최대공약수를 출력하는 함수
  
- - Juggling : 입력받은 문자열과 rotate시킬 크기인d, 문자열의 길이인 n을 입력받아 Juggling Algorithm을 이용하여 rotate시키는 함수
+ - Juggling : 문자열과 rotate시킬 크기 d, 문자열의 길이인 n을 입력받아 Juggling Algorithm을 이용하여 rotate시키는 함수
  
  - reverse : arr[start]부터 arr[end]까지 reverse 하는 함수
  
- - _reverse : 입력받은 문자열과 rotate시킬 크기인d, 문자열의 길이인 n을 입력받아 reverse함수를 이용하여 rotate시키는 함수
+ - _reverse : 문자열과 rotate시킬 크기 d, 문자열의 길이인 n을 입력받아 reverse를 이용하여 rotate시키는 함수
+
+ - T_trivial : 문자열과 rotate시킬 크기 d, 문자열의 길이인 n을 입력받아 Trivial solution을 이용하여 rotate시키는 함수
+ 
+ - swap : 문자열과 문자열에서 서로 swap시킬 위치인 a,b 그리고 바꿀 크기 d를 입력받아 a,b 위치에서 크기 d만큼의 문자열을 서로 swap하는 함수
+
+ - block_swap : 문자열과 rotate시킬 크기 d, 문자열의 길이인 n을 입력받아 block-swap을 이용하여 rotate시키는 함수
