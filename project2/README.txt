@@ -45,6 +45,6 @@
 
  - T_trivial : 문자열과 rotate시킬 크기 d, 문자열의 길이인 n을 입력받아 Trivial solution을 이용하여 rotate시키는 함수
  
- - swap : 문자열과 문자열에서 서로 swap시킬 위치인 a,b 그리고 바꿀 크기 d를 입력받아 a,b 위치에서 크기 d만큼의 문자열을 서로 swap하는 함수
+ - swap : 문자열과 문자열에서 서로 swap시킬 위치인 a,b 그리고 바꿀 크기 d를 입력받아 a,b 위치에서 크기 d만큼의 문자열을 서로 swap하는 함수-block_swap에서 연속적으로 swap을 하기 위해 정의하여 사용한다.
 
- - block_swap : 문자열과 rotate시킬 크기 d, 문자열의 길이인 n을 입력받아 block-swap을 이용하여 rotate시키는 함수
+ - block_swap : 문자열과 rotate시킬 크기 d, 문자열의 길이인 n을 입력받아 block-swap을 이용하여 rotate시키는 함수-앞의 block과 뒤의 block의 길이를 비교한 후, 재귀함수를 이용해 연속적으로 swap을 하는 방식
