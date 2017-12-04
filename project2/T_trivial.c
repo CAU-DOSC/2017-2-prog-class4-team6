@@ -22,14 +22,3 @@ void T_trivial(int n, int d, int length, char str[])
 		}
 	}
 }
-
-int main()
-{
-	int n, d, length = 0;
-	char str[100] = { 'a','b','c' };
-	scanf("%d %d %d", &n, &d, &length);
-	printf("%d %d %d\n", n, d, length);
-	T_trivial(n, d, length, str);
-	printf("%c", str[0]);
-	return 0;
-}
