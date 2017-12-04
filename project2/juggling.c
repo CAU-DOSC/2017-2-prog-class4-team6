@@ -6,6 +6,7 @@ void Juggling(char ary[], int d, int n)
 	int i, j, k, temp;
 	if (d > 0)
 	{
+		d = n - d;
 		for (i = 0; i < gcd(d, n); i++)
 		{
 			temp = ary[i];
@@ -25,7 +26,7 @@ void Juggling(char ary[], int d, int n)
 	}
 	else if (d < 0)
 	{
-		d = n - (-d);
+		d = -d;
 		for (i = 0; i < gcd(d, n); i++)
 		{
 			temp = ary[i];
