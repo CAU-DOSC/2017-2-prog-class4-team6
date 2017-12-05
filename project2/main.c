@@ -21,7 +21,7 @@ int main(void)
 
 	for (int i = 0; i < 3; i++)
 	{
-		printf("문자열 길이 입력:");
+		printf("enter string length:");
 		str = genrate_input_data(str, &n, &d);
 		strlength[i] = strlen(str)-4;
 		distance[i] = d;
