@@ -1,8 +1,8 @@
 #include "header.h"
-
+#include <string.h>
 int main(void)
 {
-	int strlen[3];
+	int strlength[3];
 	int distance[3];
 
 	char*str = NULL;
@@ -23,11 +23,11 @@ int main(void)
 	{
 		printf("문자열 길이 입력:");
 		str = genrate_input_data(str, &n, &d);
-		strlen[i] = n;
+		strlength[i] = strlen(str)-4;
 		distance[i] = d;
-		str2 = (char *)malloc(sizeof(int) * (*pn));
-		str3 = (char *)malloc(sizeof(int) * (*pn));
-		str4 = (char *)malloc(sizeof(int) * (*pn));
+		str2 = (char *)malloc(sizeof(char) * (*pn));
+		str3 = (char *)malloc(sizeof(char) * (*pn));
+		str4 = (char *)malloc(sizeof(char) * (*pn));
 		strcpy(str2, str);
 		strcpy(str3, str);
 		strcpy(str4, str);
@@ -74,6 +74,8 @@ int main(void)
 		str2[0] = "\0";
 		str3[0] = "\0";
 		str4[0] = "\0";
+
+		
 	}
 
 	
@@ -82,7 +84,7 @@ int main(void)
 	printf("STRLength\t ROTATEdistance\t T.trivial\t T.juggle\t T.blockswap\t T.reverse\t\n");
 	for (int i = 0; i < 3; i++)
 	{
-		printf("%d\t\t %d\t\t %lf\t %lf\t %lf\t %lf\t\n", strlen[i], distance[i], duration_arr[i][0], duration_arr[i][1], duration_arr[i][2], duration_arr[i][3]);
+		printf("%d\t\t %d\t\t %lf\t %lf\t %lf\t %lf\t\n", strlength[i], distance[i], duration_arr[i][0], duration_arr[i][1], duration_arr[i][2], duration_arr[i][3]);
 	}
 
 	return 0;
