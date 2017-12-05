@@ -2,15 +2,12 @@
 #include <stdio.h>
 
 
-char* genrate_input_data(char *str, int *pn, int *pd)
+char* genrate_input_data(char *str, int *pn)
 {
 	srand((unsigned)time(NULL));
 	scanf("%d", pn); //문자열 길이 설정
-	*pd = rand() % (*pn) + 1;
-	if (rand() % 2)
-		(*pd) *= -1;
 
-	str = malloc(sizeof(char) * (*pn));
+	str = malloc(sizeof(char)* (*pn));
 	for (int i = 0; i < (*pn); i++)
 		str[i] = (rand() % 26) + 65;
 

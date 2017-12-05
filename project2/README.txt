@@ -1,50 +1,65 @@
-ï»¿<í”„ë¡œì íŠ¸ ê°œìš”>
+<ÇÁ·ÎÁ§Æ® °³¿ä>
  
- â€¢ Input data 
-   â€“ n  d   CharArrayOfLengthN 
-     â€¢ d > 0 : clockwise rotation  
-     â€¢ d < 0 : counterclockwise rotation
+ ? Input data 
+   ? n  d   CharArrayOfLengthN 
+     ? d > 0 : clockwise rotation  
+     ? d < 0 : counterclockwise rotation
 
- â€¢ Program 
-   â€“ 4 functions of rotation returns with result 
-     â€¢ Trivial solution / juggling / block-swap / reverse 
-   â€“ Main routine handling I/O and invoke functions 
-     â€¢ Main(): generate test case(input data) to compare time complexity of 4 methods
+ ? Program 
+   ? 4 functions of rotation returns with result 
+     ? Trivial solution / juggling / block-swap / reverse 
+   ? Main routine handling I/O and invoke functions 
+     ? Main(): generate test case(input data) to compare time complexity of 4 methods
 
- â€¢ Output data 
-   â€“ Time elapsed for rotating data for 4 methods respectively 
-     â€¢ Series of  4 results to show the difference
+ ? Output data 
+   ? Time elapsed for rotating data for 4 methods respectively 
+     ? Series of  4 results to show the difference
 
    - - -
   
-<ì—­í• ë¶„ë‹´>
+<¿ªÇÒºĞ´ã>
 
- - main : ë°•ì¤€í˜•
+ - main : ¹ÚÁØÇü
 
- - trivial solution : ê¹€ì°¬í˜„
+ - trivial solution : ±èÂùÇö
 
- - juggling : ìœ¤ì°¬ì†”
+ - juggling : À±Âù¼Ö
 
- - block-swap : ì „í¬ìˆ˜
+ - block-swap : ÀüÈñ¼ö
 
- - reverse : í—ˆë³´ì„±
+ - reverse : Çãº¸¼º
 
- - Readme : ëª¨ë‘
+ - Readme : ¸ğµÎ
  
    - - -
   
 <Function descriptions>
   
- - gcd : ì…ë µë°›ì€ ë‘ ì •ìˆ˜ì˜ ìµœëŒ€ê³µì•½ìˆ˜ë¥¼ ì¶œë ¥í•˜ëŠ” í•¨ìˆ˜
+ - gcd : ÀÔ·Æ¹ŞÀº µÎ Á¤¼öÀÇ ÃÖ´ë°ø¾à¼ö¸¦ Ãâ·ÂÇÏ´Â ÇÔ¼ö
  
- - Juggling : ë¬¸ìì—´ê³¼ rotateì‹œí‚¬ í¬ê¸° d, ë¬¸ìì—´ì˜ ê¸¸ì´ì¸ nì„ ì…ë ¥ë°›ì•„ Juggling Algorithmì„ ì´ìš©í•˜ì—¬ rotateì‹œí‚¤ëŠ” í•¨ìˆ˜
+ - Juggling : ¹®ÀÚ¿­°ú rotate½ÃÅ³ Å©±â d, ¹®ÀÚ¿­ÀÇ ±æÀÌÀÎ nÀ» ÀÔ·Â¹Ş¾Æ Juggling AlgorithmÀ» ÀÌ¿ëÇÏ¿© rotate½ÃÅ°´Â ÇÔ¼ö
  
- - reverse : arr[start]ë¶€í„° arr[end]ê¹Œì§€ reverse í•˜ëŠ” í•¨ìˆ˜
+ - reverse : arr[start]ºÎÅÍ arr[end]±îÁö reverse ÇÏ´Â ÇÔ¼ö
  
- - _reverse : ë¬¸ìì—´ê³¼ rotateì‹œí‚¬ í¬ê¸° d, ë¬¸ìì—´ì˜ ê¸¸ì´ì¸ nì„ ì…ë ¥ë°›ì•„ reverseë¥¼ ì´ìš©í•˜ì—¬ rotateì‹œí‚¤ëŠ” í•¨ìˆ˜
+ - _reverse : ¹®ÀÚ¿­°ú rotate½ÃÅ³ Å©±â d, ¹®ÀÚ¿­ÀÇ ±æÀÌÀÎ nÀ» ÀÔ·Â¹Ş¾Æ reverse¸¦ ÀÌ¿ëÇÏ¿© rotate½ÃÅ°´Â ÇÔ¼ö
 
- - T_trivial : ë¬¸ìì—´ê³¼ rotateì‹œí‚¬ í¬ê¸° d, ë¬¸ìì—´ì˜ ê¸¸ì´ì¸ nì„ ì…ë ¥ë°›ì•„ Trivial solutionì„ ì´ìš©í•˜ì—¬ rotateì‹œí‚¤ëŠ” í•¨ìˆ˜
+ - T_trivial : ¹®ÀÚ¿­°ú rotate½ÃÅ³ Å©±â d, ¹®ÀÚ¿­ÀÇ ±æÀÌÀÎ nÀ» ÀÔ·Â¹Ş¾Æ Trivial solutionÀ» ÀÌ¿ëÇÏ¿© rotate½ÃÅ°´Â ÇÔ¼ö
  
- - swap : ë¬¸ìì—´ê³¼ ë¬¸ìì—´ì—ì„œ ì„œë¡œ swapì‹œí‚¬ ìœ„ì¹˜ì¸ a,b ê·¸ë¦¬ê³  ë°”ê¿€ í¬ê¸° dë¥¼ ì…ë ¥ë°›ì•„ a,b ìœ„ì¹˜ì—ì„œ í¬ê¸° dë§Œí¼ì˜ ë¬¸ìì—´ì„ ì„œë¡œ swapí•˜ëŠ” í•¨ìˆ˜-block_swapì—ì„œ ì—°ì†ì ìœ¼ë¡œ swapì„ í•˜ê¸° ìœ„í•´ ì •ì˜í•˜ì—¬ ì‚¬ìš©í•œë‹¤.
+ - swap : ¹®ÀÚ¿­°ú ¹®ÀÚ¿­¿¡¼­ ¼­·Î swap½ÃÅ³ À§Ä¡ÀÎ a,b ±×¸®°í ¹Ù²Ü Å©±â d¸¦ ÀÔ·Â¹Ş¾Æ a,b À§Ä¡¿¡¼­ Å©±â d¸¸Å­ÀÇ ¹®ÀÚ¿­À» ¼­·Î swapÇÏ´Â ÇÔ¼ö-block_swap¿¡¼­ ¿¬¼ÓÀûÀ¸·Î swapÀ» ÇÏ±â À§ÇØ Á¤ÀÇÇÏ¿© »ç¿ëÇÑ´Ù.
 
- - block_swap : ë¬¸ìì—´ê³¼ rotateì‹œí‚¬ í¬ê¸° d, ë¬¸ìì—´ì˜ ê¸¸ì´ì¸ nì„ ì…ë ¥ë°›ì•„ block-swapì„ ì´ìš©í•˜ì—¬ rotateì‹œí‚¤ëŠ” í•¨ìˆ˜-ì•ì˜ blockê³¼ ë’¤ì˜ blockì˜ ê¸¸ì´ë¥¼ ë¹„êµí•œ í›„, ì¬ê·€í•¨ìˆ˜ë¥¼ ì´ìš©í•´ ì—°ì†ì ìœ¼ë¡œ swapì„ í•˜ëŠ” ë°©ì‹
+ - block_swap : ¹®ÀÚ¿­°ú rotate½ÃÅ³ Å©±â d, ¹®ÀÚ¿­ÀÇ ±æÀÌÀÎ nÀ» ÀÔ·Â¹Ş¾Æ block-swapÀ» ÀÌ¿ëÇÏ¿© rotate½ÃÅ°´Â ÇÔ¼ö-¾ÕÀÇ block°ú µÚÀÇ blockÀÇ ±æÀÌ¸¦ ºñ±³ÇÑ ÈÄ, Àç±ÍÇÔ¼ö¸¦ ÀÌ¿ëÇØ ¿¬¼ÓÀûÀ¸·Î swapÀ» ÇÏ´Â ¹æ½Ä
+ 
+   - - -
+
+Test Case
+[strLength]  [rotate distance]  [T.trivial]    [T.juggle]     [T.bw]      [T.reverse]
+10000000    12342                301.276      0.156          0.032        0.046
+50              1                      0               0                0              0  
+10000         6657                 1.639          0                0              0
+
+
+
+
+
+
+ 

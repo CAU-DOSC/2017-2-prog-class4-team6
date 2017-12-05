@@ -1,8 +1,8 @@
 #include "header.h"
-
+#include <string.h>
 int main(void)
 {
-	int strlen[3];
+	int strlength[3];
 	int distance[3];
 
 	char*str = NULL;
@@ -21,68 +21,72 @@ int main(void)
 
 	for (int i = 0; i < 3; i++)
 	{
-		printf("ë¬¸ìžì—´ ê¸¸ì´ ìž…ë ¥:");
-		str = genrate_input_data(str, &n, &d);
-		strlen[i] = n;
+		printf("¹®ÀÚ¿­ ±æÀÌ ÀÔ·Â: ");
+		str = genrate_input_data(str, &n);
+		printf("rotate ½ÃÅ³ Å©±â ÀÔ·Â: ");
+		scanf("%d", &d);
+		strlength[i] = strlen(str) - 4;
 		distance[i] = d;
-		str2 = (char *)malloc(sizeof(int) * (*pn));
-		str3 = (char *)malloc(sizeof(int) * (*pn));
-		str4 = (char *)malloc(sizeof(int) * (*pn));
+		str2 = (char *)malloc(sizeof(char)* (*pn));
+		str3 = (char *)malloc(sizeof(char)* (*pn));
+		str4 = (char *)malloc(sizeof(char)* (*pn));
 		strcpy(str2, str);
 		strcpy(str3, str);
 		strcpy(str4, str);
-		
-		//í•¨ìˆ˜ ì‹¤í–‰
+
+		//ÇÔ¼ö ½ÇÇà
 		////trivial
-		
+
 		start = clock();
-		T_trivial(n, d, str); //í•¨ìˆ˜
+		T_trivial(n, d, str); //ÇÔ¼ö
 		finish = clock();
 		duration = finish - start;
 		long double dur1 = duration / CLOCKS_PER_SEC;
 
 		////juggling
 		start = clock();
-		Juggling(str2, d, n); //í•¨ìˆ˜
+		Juggling(str2, d, n); //ÇÔ¼ö
 		finish = clock();
 		duration = finish - start;
 		long double dur2 = duration / CLOCKS_PER_SEC;
 
 		////block swap
 		start = clock();
-		block_swap(str3, n, d); //í•¨ìˆ˜
+		block_swap(str3, n, d); //ÇÔ¼ö
 		finish = clock();
 		duration = finish - start;
 		long double dur3 = duration / CLOCKS_PER_SEC;
 
 		////reverse
 		start = clock();
-		_reverse(str4, d, n); //í•¨ìˆ˜
+		_reverse(str4, d, n); //ÇÔ¼ö
 		finish = clock();
 		duration = finish - start;
 		long double dur4 = duration / CLOCKS_PER_SEC;
 
-		//ë°°ì—´ì—ë‹¤ê°€ í•¨ìˆ˜ì‹¤í–‰ì‹œê°„ì„ ì €ìž¥(1í–‰~4í–‰)
+		//¹è¿­¿¡´Ù°¡ ÇÔ¼ö½ÇÇà½Ã°£À» ÀúÀå(1Çà~4Çà)
 		duration_arr[i][0] = dur1;
 		duration_arr[i][1] = dur2;
 		duration_arr[i][2] = dur3;
 		duration_arr[i][3] = dur4;
-		
 
-		//ë¹ˆ ë¬¸ìžì—´ë¡œ ì´ˆê¸°í™”
+
+		//ºó ¹®ÀÚ¿­·Î ÃÊ±âÈ­
 		str[0] = "\0";
 		str2[0] = "\0";
 		str3[0] = "\0";
 		str4[0] = "\0";
+
+
 	}
 
-	
+
 	printf("\n");
-	//rotateí•˜ëŠ”ë° ê±¸ë¦° ì‹œê°„
+	//rotateÇÏ´Âµ¥ °É¸° ½Ã°£
 	printf("STRLength\t ROTATEdistance\t T.trivial\t T.juggle\t T.blockswap\t T.reverse\t\n");
 	for (int i = 0; i < 3; i++)
 	{
-		printf("%d\t\t %d\t\t %lf\t %lf\t %lf\t %lf\t\n", strlen[i], distance[i], duration_arr[i][0], duration_arr[i][1], duration_arr[i][2], duration_arr[i][3]);
+		printf("%d\t\t %d\t\t %lf\t %lf\t %lf\t %lf\t\n", strlength[i], distance[i], duration_arr[i][0], duration_arr[i][1], duration_arr[i][2], duration_arr[i][3]);
 	}
 
 	return 0;
