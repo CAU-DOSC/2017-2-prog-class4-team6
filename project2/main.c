@@ -1,5 +1,6 @@
 #include "header.h"
 #include <string.h>
+
 int main(void)
 {
 	int strlength[3];
